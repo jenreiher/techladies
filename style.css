@@ -59,7 +59,7 @@ a:hover {
 .background {
   position: relative;
   overflow: hidden;
-  background-color: rgba(236, 224, 209, 0.4);
+  background-color: rgba(150, 114, 89, 0.6);
 }
 .background:before {
   content: '';
@@ -88,6 +88,7 @@ h1 {
   font-family: 'Miniver', cursive;
   color: var(--brand);
   font-size: 100px;
+  text-shadow: 0 0 100px var(--light);
 }
 
 h2 {

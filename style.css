@@ -12,10 +12,10 @@
 html, body {
   font-family: var(--body-font);
   text-align: center;
+  height: 100%;
 }
 
 body {
-  height: 100%;
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -61,6 +61,7 @@ a:hover {
 .background {
   position: relative;
   overflow: hidden;
+  height: 100%;
   background-color: rgba(150, 114, 89, 0.6);
 }
 .background:before {
@@ -73,7 +74,6 @@ a:hover {
   height: 100%;
   background-image: url("./brooke-cagle-g1Kr4Ozfoac-unsplash.jpg");
   background-repeat: no-repeat;
-  background-position: 0;
   background-size: cover;
   z-index: -1;
 }
@@ -90,8 +90,8 @@ h1 {
   font-family: 'Miniver', cursive;
   color: var(--brand);
   font-size: 150px;
-  text-shadow: 0 0 80px var(--light);
-  margin-top: 50px
+  text-shadow: 0 0 70px var(--light);
+  margin: 75px;
 }
 
 h2 {

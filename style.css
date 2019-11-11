@@ -39,10 +39,10 @@ a:hover {
 .button, button {
   background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid var(--medium);
-  padding: 20px 50px;
+  padding: 20px 60px;
   transition: 0.3s;
   border-radius: 10px 10px 2px 2px;
-  font-size: 18px;
+  font-size: 24px;
 }
 .button:first-of-type, button:first-of-type {
   border-radius: 2px 10px 2px 10px;
@@ -60,7 +60,7 @@ a:hover {
   justify-content: center;
 }
 .buttons .button + .button {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .background {
@@ -88,7 +88,7 @@ a:hover {
   width: 100%;
   padding: 50px;
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
 }
 
 h1 {
@@ -115,7 +115,7 @@ h2 {
   border: none;
 }
 .social a + a {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .social svg {
   height: 45px;

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Miniver&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Domine&display=swap");
+:root {
+  --light: #ece0d1;
+  --medium: #967259;
+  --dark: #453223;
+  --brand: #7c5996;
+  --body-font: 'Encode Sans', sans-serif;
+}
+
+html, body {
+  font-family: var(--body-font);
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--medium);
+  padding-bottom: 2px;
+}
+a:hover {
+  border-bottom-color: var(--dark);
+}
+
+.button, button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--medium);
+  padding: 6px 50px;
+  transition: 0.3s;
+  border-radius: 10px 10px 2px 2px;
+}
+.button:first-of-type, button:first-of-type {
+  border-radius: 2px 10px 2px 10px;
+}
+.button:last-of-type, button:last-of-type {
+  border-radius: 10px 2px 10px 2px;
+}
+.button:hover, button:hover {
+  border-color: var(--dark);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons .button + .button {
+  margin-left: 10px;
+}
+
+.background {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(236, 224, 209, 0.4);
+}
+.background:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9g");
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero {
+  background-color: var(--light);
+  with: 100%;
+  padding: 40px;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+h1 {
+  font-family: 'Miniver', cursive;
+  color: var(--brand);
+  font-size: 100px;
+}
+
+h2 {
+  color: var(--dark);
+  font-size: 20px;
+  font-family: 'Domine', serif;
+  margin-bottom: 30px;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+.social a {
+  border: none;
+}
+.social a + a {
+  margin-left: 20px;
+}
+.social svg {
+  height: 25px;
+  width: 25px;
+  fill: #fff;
+  opacity: 0.8;
+}
+.social svg:hover {
+  opacity: 1;
+}

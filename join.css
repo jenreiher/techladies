@@ -1,0 +1,53 @@
+
+fieldset {
+  max-width: 600px;
+  width: 50%;
+}
+
+.identification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.identify {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.identification__question {
+  font-weight: 500;
+}
+
+.identification__response {
+  margin-top: 20px;
+  min-height: 50px;
+  color: var(--brand)
+  width: 400px;
+  max-width: 40%;
+}
+
+.identification__response > p {
+  margin-bottom: 10px;
+}
+
+.radio-set {
+  display: flex;
+  justify-content: center;
+}
+
+.radio-set__input-group {
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.radio-set__input-group label {
+  margin-left: 5px;
+}
+
+.radio-set__input-group + .radio-set__input-group {
+  margin-left: 10px;
+}

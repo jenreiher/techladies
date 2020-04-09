@@ -119,6 +119,10 @@ h2 {
   margin-bottom: 30px;
 }
 
+.strong {
+  font-weight: 500;
+}
+
 .social {
   position: absolute;
   bottom: 50px;
@@ -138,48 +142,4 @@ h2 {
 }
 .social svg:hover {
   opacity: 1;
-}
-
-fieldset {
-  max-width: 500px;
-  width: 25%;
-}
-
-.identify {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-.identification__question {
-  font-weight: 500;
-}
-
-.identification__response {
-  margin-top: 20px;
-  min-height: 50px;
-  font-weight: 500;
-  color: var(--brand)
-}
-
-.identification__response > p {
-  margin-bottom: 5px;
-}
-
-.radio-set {
-  display: flex;
-  justify-content: center;
-}
-
-.radio-set__input-group {
-  margin-bottom: 8px;
-  display: flex;
-}
-
-.radio-set__input-group label {
-  margin-left: 5px;
-}
-
-.radio-set__input-group + .radio-set__input-group {
-  margin-left: 10px;
 }

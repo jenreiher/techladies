@@ -4,11 +4,11 @@ $( document ).ready(function() {
       if (this.checked && this.value === "male") {
         $('.sign-up-button').attr( "disabled", "disabled" )
         $('.identification__response')
-          .html('<p>Thanks for respecting the safe space of this group and not joining.</p><p>Job postings can be shared via <a href="https://bit.ly/2XNb2LG">this form</a>.</p>')
+          .html('<p class="strong">Thanks so much for respecting that this community is reserved for women and non-binary people by not joining.<p>If you\'d like to share a job opportunity with our members, please submit it using <a href="https://bit.ly/2XNb2LG">this form</a>.</p>')
       } else {
         $('.sign-up-button').removeAttr("disabled");
         $('.identification__response')
-          .text('Welcome! We look forward to connecting with you')
+          .html('<p><span class="strong">Welcome!</span> We look forward to connecting with you</p>')
       }
     });
 });

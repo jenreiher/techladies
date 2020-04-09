@@ -46,13 +46,25 @@ a:hover {
   font-size: 24px;
   font-weight: 500;
 }
+
+.button--small {
+  font-size: 20px;
+  padding: 16px 40px;
+}
+
+.button[disabled] {
+  color: #ddd;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
 .button:first-of-type, button:first-of-type {
   border-radius: 2px 10px 2px 10px;
 }
 .button:last-of-type, button:last-of-type {
   border-radius: 10px 2px 10px 2px;
 }
-.button:hover, button:hover {
+.button:hover[:not(disabled)], button:hover[:not(disabled)] {
   border-color: var(--dark);
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -126,4 +138,48 @@ h2 {
 }
 .social svg:hover {
   opacity: 1;
+}
+
+fieldset {
+  max-width: 500px;
+  width: 25%;
+}
+
+.identify {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.identification__question {
+  font-weight: 500;
+}
+
+.identification__response {
+  margin-top: 20px;
+  min-height: 50px;
+  font-weight: 500;
+  color: var(--brand)
+}
+
+.identification__response > p {
+  margin-bottom: 5px;
+}
+
+.radio-set {
+  display: flex;
+  justify-content: center;
+}
+
+.radio-set__input-group {
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.radio-set__input-group label {
+  margin-left: 5px;
+}
+
+.radio-set__input-group + .radio-set__input-group {
+  margin-left: 10px;
 }

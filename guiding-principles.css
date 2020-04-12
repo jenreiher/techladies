@@ -1,0 +1,70 @@
+.guiding-principles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 5%;
+  font-size: 16px;
+}
+
+.guiding-principles__list {
+  text-align: left;
+  width: 80%;
+}
+
+.guiding-principles__item {
+  margin-bottom: 5px;
+  line-height: 1.5;
+  padding: 10px 15px;
+  border: 3px solid transparent;
+}
+
+.guiding-principles__item:hover {
+  cursor: pointer;
+}
+
+.guiding-principles__item[open] {
+  border: 3px solid var(--brand);
+  border-radius: 5px;
+}
+
+.guiding-principles__item::-webkit-details-marker {
+  color: var(--brand);
+}
+
+.guiding-principles__item > ul {
+  list-style: circle;
+  margin-left: 2rem;
+  margin-top: 10px;
+}
+
+.guiding-principles__item > ul > li {
+  margin-bottom: 8px;
+}
+
+.guiding-principles__item-title {
+  font-weight: 500;
+  list-style: none;
+}
+
+.guiding-principles__item-title::-webkit-details-marker {
+  display: none;
+}
+
+.guiding-principles__item-title::before {
+  content: "❯";
+  margin-right: 0.75rem;
+  display: inline-block;
+}
+
+.guiding-principles__item-title:hover::before,
+.guiding-principles__item-title:hover {
+  color: var(--brand);
+}
+
+.guiding-principles__item[open] .guiding-principles__item-title::before {
+  transform: rotate(90deg);
+}
+
+.guiding-principles__item-title:focus {
+  outline: none;
+ }
